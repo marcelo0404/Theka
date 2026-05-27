@@ -1,0 +1,147 @@
+:root {
+  --Laranja: #F78520;
+}
+
+.pageContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #8C490D;
+  overflow: hidden;
+}
+
+.leftSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.illustration {
+  width: 1100px;
+  margin-left: -20px;
+  transform: rotate(15deg);
+  align-self: center;
+  overflow: hidden;
+}
+
+.brand img {
+  width: 150px;
+}
+
+.rightSide {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.registerCard {
+  background-color: white;
+  width: 450px;
+  height: 95vh;
+  border-radius: 40px 0 0 40px;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+}
+
+.title {
+  color: var(--Laranja);
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.inputGroup {
+  margin-bottom: 1.2rem;
+}
+
+.inputGroup label {
+  display: block;
+  color: var(--Laranja);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1.5px solid var(--Laranja);
+  border-radius: 25px;
+  color: var(--Laranja);
+  outline: none;
+}
+
+.inputGroup input::placeholder {
+  color: var(--Laranja);
+  opacity: 0.6;
+}
+
+.passwordWrapper {
+  position: relative;
+}
+
+.eyeIcon {
+  width: 20px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--Laranja);
+  cursor: pointer;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+.cancelBtn {
+  text-decoration: none;
+  color: var(--Laranja);
+  border: 1.5px solid var(--Laranja);
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.cancelBtn:hover {
+  background-color: #fff3e6;
+}
+
+.saveBtn {
+  background-color: var(--Laranja);
+  color: white;
+  border: none;
+  padding: 10px 35px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.saveBtn:hover {
+  opacity: 0.9;
+}
+
+
+
+@media (max-width: 900px) {
+  .leftSide { display: none; }
+  .registerCard {
+    width: 100%;
+    border-radius: 0;
+    padding: 30px;
+  }
+}

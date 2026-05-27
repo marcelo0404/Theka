@@ -1,0 +1,201 @@
+.pageContainer {
+  width: 100%;
+}
+
+.hero {
+  width: 100rem;
+  height: 49.5rem;
+  border-radius: 0 0 1.25rem 1.25rem;
+  background: var(--CORES-ROSA-500, #BF0259);
+  color: white;
+  margin-top: -120px;
+  margin-bottom: 40px;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+
+.heroImg img {
+  height: 27rem;
+  width: auto;
+  transform: rotate(10deg);
+}
+
+.heroText h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+
+.tagsContainer {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 40px;
+}
+
+.tag {
+  border: 1.5px solid #7A003C;
+  color: #7A003C;
+  padding: 8px 20px;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.historySection {
+  margin: auto;
+  width: 75rem;
+  height: 39.3125rem;
+  border-radius: 1.25rem;
+  background: #A1D54A;
+
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.historyContent {
+  padding: 60px;
+  width: 60%;
+  z-index: 2;
+}
+
+.historyContent h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.historyImg {
+  display: flex;
+  width: 48.02438rem;
+  transform: rotate(-90deg);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5.44669rem;
+}
+
+
+.valuesSection {
+  width: 75rem;
+  height: 39.3125rem;
+  margin: auto;
+}
+
+.valuesSection h2,
+.teamSection h2 {
+  color: #7A003C;
+  font-size: 2.5rem;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.valueCard {
+  height: 180px;
+  border-radius: 20px;
+  padding: 20px;
+  color: #5D360B;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.orange {
+  background: #F28729 ;
+}
+
+.green {
+  background: #89B34A ;
+}
+
+.pink {
+  background: #B00055;
+  color: white;
+}
+
+
+.teamSection {
+  width: 75rem;
+  margin: auto;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 8rem;
+}
+
+.memberCard {
+  width: 17.8775rem;
+  height: 19rem;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 48/59;
+  background: #F78520;
+}
+
+.memberCard2 {
+  width: 17.8775rem;
+  height: 19rem;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 23/41;
+  background: #62832A;
+}
+
+.memberCard3 {
+  width: 17.8775rem;
+  height: 19rem;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  background: #D532A7;
+}
+
+.memberCard4 {
+  width: 17.8775rem;
+  height: 19rem;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 287/431;
+  background: #005842;
+}
+
+
+.memberName {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+
+  .heroContent,
+  .historySection {
+    flex-direction: column;
+  }
+
+  .valuesGrid,
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+}
