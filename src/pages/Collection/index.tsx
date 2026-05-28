@@ -1,6 +1,6 @@
 import styles from './Collection.module.css';
 import searchIcon from '../../assets/MagnifyingGlass.svg';
-import arrow from '../../assets/CaretDown.svg';
+import arrow from '../../assets/VectorPink.svg';
 // import plus from '../../assets/Plus.svg'; 
 import cover from '../../assets/CAPA.png';
 import cover2 from '../../assets/CAPA-1.png';
@@ -77,7 +77,7 @@ export function Collection() {
           <span className={styles.pageNum}>1</span>
           <span className={`${styles.pageNum} ${styles.activePage}`}>2</span>
           <span className={styles.pageNum}>3</span>
-          <button className={styles.pageArrow}><img src={arrow} alt="next" /></button>
+          <button className={styles.pageArrow2}><img src={arrow} alt="next" /></button>
         </div>
       </section>
     </div>
