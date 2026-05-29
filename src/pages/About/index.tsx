@@ -1,6 +1,7 @@
 import styles from './About.module.css';
 import headerIllustration from '../../assets/MASCOTEPY.png'; 
 import historyGraphics from '../../assets/LOGOTIPO.svg'; 
+import logo from '../../assets/LOGOTIPOY.png';
 import team1 from '../../assets/image 61.png';
 import team2 from '../../assets/image 62.png';
 import team3 from '../../assets/image 63.png';
@@ -21,10 +22,13 @@ export function About() {
         <div className={styles.heroContent}>
           <img src={headerIllustration} alt="" className={styles.heroImg} />
           <div className={styles.heroText}>
-            <h1>Theka</h1>
+            <img src={logo} alt="Logo Theka" className={styles.logo} />
             <p>
-              A <strong>Theka®</strong> é um espaço feito para conectar pessoas e histórias. 
-              Aqui você encontra livros para todos os gostos, além de atividades...
+              A <strong>Theka®</strong> A Theka©  é um espaço feito para conectar 
+              pessoas e histórias. Aqui você encontra livros para todos os gostos, 
+              além de atividades que incentivam o conhecimento, a cultura e a troca de 
+              experiências. Mais do que estantes cheias, somos um ponto de encontro para 
+              quem acredita no poder da leitura em transformar vidas.
             </p>
           </div>
         </div>
@@ -42,11 +46,14 @@ export function About() {
         <div className={styles.historyContent}>
           <h2>Nossa história</h2>
           <p>
-            Tudo começou era apenas uma pequena coleção de livros reunidos com carinho...
+            No começo, era apenas uma pequena coleção de livros reunidos com carinho, mas, 
+            com o tempo, foi crescendo e conquistando cada vez mais leitores.
           </p>
           <p>
-            Hoje, além de guardar histórias nas estantes, também faz parte da história de quem passa por aqui...
-          </p>
+            
+            Hoje, além de guardar histórias nas estantes, também faz parte da história de quem passa o
+            por aqui: estudantes, pesquisadores, curiosos e apaixonados por livros. Seguimos firmes na missão de ser um ponto de encontro, aprendizado e inspiração para todos.
+            </p>
         </div>
         <img src={historyGraphics} alt="" className={styles.historyImg} />
       </section>

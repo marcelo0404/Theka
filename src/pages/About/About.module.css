@@ -1,3 +1,12 @@
+:root {
+  --Orange: #F78520;
+  --DarkPurple: #81013A;
+  --pink: #BF0259;
+  --Green: #A1D54A;
+  --mainSource: "DM Sans", sans-serif;
+  --secondarySource: "Inter", sans-serif;
+}
+
 .pageContainer {
   width: 100%;
 }
@@ -26,9 +35,30 @@
   transform: rotate(10deg);
 }
 
-.heroText h1 {
-  font-size: 5rem;
-  margin-bottom: 10px;
+
+/* Não fica centralizado */
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroText p {
+  color: var(--CORES-CINZA-100, #F2F2F1);
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.575rem;
+  width: 30.4375rem;
+}
+
+.heroText img {
+  width: 30.4375rem;
+  height: 8.44219rem;
+
 }
 
 
@@ -68,8 +98,24 @@
 }
 
 .historyContent h2 {
-  font-size: 3rem;
-  margin-bottom: 30px;
+  color: var(--CORES-VERDE_OLIVA-700, #111A04);
+  font-family: var(--mainSource);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+  letter-spacing: -0.08rem;
+}
+
+.historyContent p {
+  color: var(--CORES-VERDE_OLIVA-700, #111A04);
+  font-family: var(--secondarySource);
+  width: 30.375rem;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.575rem;
+
 }
 
 .historyImg {
@@ -110,11 +156,11 @@
 }
 
 .orange {
-  background: #F28729 ;
+  background: #F28729;
 }
 
 .green {
-  background: #89B34A ;
+  background: #89B34A;
 }
 
 .pink {
