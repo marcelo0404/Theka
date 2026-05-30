@@ -28,12 +28,12 @@
 }
 
 
-
+/* 
 .heroImg img {
-  height: 27rem;
+  height: 5rem;
   width: auto;
   transform: rotate(10deg);
-}
+} */
 
 
 /* Não fica centralizado */
@@ -105,6 +105,7 @@
   font-weight: 700;
   line-height: 3.75rem;
   letter-spacing: -0.08rem;
+  margin: 0 0 13.12rem 2.56rem;
 }
 
 .historyContent p {
@@ -115,13 +116,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.575rem;
+  margin-left: 2.56rem;
 
 }
 
 .historyImg {
   display: flex;
-  width: 48.02438rem;
-  transform: rotate(-90deg);
   flex-direction: column;
   align-items: flex-start;
   gap: 5.44669rem;
@@ -136,8 +136,13 @@
 
 .valuesSection h2,
 .teamSection h2 {
-  color: #7A003C;
-  font-size: 2.5rem;
+  color: var(--CORES-ROSA-600, #81013A);
+  font-family: var(--mainSource);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+  letter-spacing: -0.08rem;
 }
 
 .valuesGrid {
@@ -147,25 +152,62 @@
 }
 
 .valueCard {
-  height: 180px;
-  border-radius: 20px;
-  padding: 20px;
-  color: #5D360B;
-  font-weight: bold;
-  font-size: 1.2rem;
+  width: 24.1875rem;
+  height: 16.625rem;
+  border-radius: 1.25rem;
+  font-family: var(--mainSource);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.04rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.valueCard span {
+  margin: 5rem 0 0 1.25rem
 }
 
 .orange {
-  background: #F28729;
+  background: var(--CORES-AMARELO-600, #F8C200);
+  color: var(--CORES-ROSA-600, #81013A);
+}
+
+.orange img {
+  width: 20rem;
+  height: auto;
+  /* transform: rotate(30deg); */
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .green {
-  background: #89B34A;
+  background: var(--CORES-VERDE_OLIVA-200, #A1D54A);
+  color: var(--CORES-LARANJA-300, #F78520);
+}
+
+.green img {
+  width: 28rem;
+  height: auto;
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
 }
 
 .pink {
-  background: #B00055;
-  color: white;
+  background: var(--CORES-ROSA-500, #BF0259);
+  color: var(--CORES-LARANJA-300, #F78520);  
+}
+
+.pink img {
+  width: 15rem;
+  height: auto;
+  /* transform: rotate(30deg); */
+  position: absolute;
+  right: -2rem;
+  bottom: -7rem;
 }
 
 

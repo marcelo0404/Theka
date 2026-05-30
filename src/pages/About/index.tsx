@@ -1,6 +1,6 @@
 import styles from './About.module.css';
 import headerIllustration from '../../assets/MASCOTEPY.png'; 
-import historyGraphics from '../../assets/LOGOTIPO.svg'; 
+import historyGraphics from '../../assets/LOGOTIPOTKA.png'; 
 import logo from '../../assets/LOGOTIPOY.png';
 import team1 from '../../assets/image 61.png';
 import team2 from '../../assets/image 62.png';
