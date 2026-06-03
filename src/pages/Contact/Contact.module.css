@@ -1,14 +1,27 @@
+:root {
+  --Orange: #F78520;
+  --DarkPurple: #81013A;
+  --pink: #BF0259;
+  --Green: #A1D54A;
+  --mainSource: "DM Sans", sans-serif;
+  --secondarySource: "Inter", sans-serif;
+}
+
 .pageContainer {
   max-width: 1200px;
-  margin: 120px auto 60px auto; 
+  margin: 0px auto 60px auto;
   padding: 0 20px;
 }
 
 .mainTitle {
-  color: #7A003C; 
-  font-size: 3rem;
-  margin-bottom: 30px;
-  font-weight: 800;
+  color: var(--DarkPurple);
+  font-family: var(--mainSource);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+  letter-spacing: -0.08rem;
+  margin-left: 1rem;
 }
 
 .contentCard {
@@ -16,7 +29,7 @@
   border-radius: 30px;
   display: flex;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .mapSection {
@@ -45,17 +58,28 @@
 }
 
 .unitBtn {
-  padding: 10px 20px;
-  border-radius: 12px;
+  display: inline-flex;
+  height: 2.75rem;
+  padding: 0.625rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 6.25rem;
+  background: var(--CORES-CINZA-400, #7E7E7D);
   border: none;
-  background-color: #888;
-  color: white;
-  font-weight: bold;
+  color: #F8F8F8;
+  font-family: var(--secondarySource);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
   cursor: pointer;
+  
 }
 
 .activeUnit {
-  background-color: #7A003C; /* Vinho destaque */
+  border-radius: 6.25rem;
+  background: var(--DarkPurple);
 }
 
 .addressText {
@@ -71,9 +95,13 @@
 }
 
 .formSection h2 {
-  color: #5D360B; /* Marrom */
-  margin-bottom: 25px;
-  font-size: 1.8rem;
+  color: var(--CORES-ROSA-700, #48001D);
+  font-family: var(--mainSource);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.04rem;
 }
 
 .inputGroup {
@@ -81,24 +109,23 @@
 }
 
 .inputGroup label {
-  display: block;
-  color: #5D360B;
-  font-weight: bold;
-  margin-bottom: 5px;
+  color: var(--CORES-ROSA-700, #48001D);
+  font-family: var(--secondarySource);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 8rem;
 }
 
-.inputGroup input, .inputGroup textarea {
+.inputGroup input,
+.inputGroup textarea {
   width: 100%;
   padding: 12px 15px;
   border: 1.5px solid #5D360B;
   border-radius: 15px;
   background: none;
   outline: none;
-}
-
-.inputGroup textarea {
-  height: 100px;
-  resize: none;
 }
 
 .actionButtons {
@@ -109,30 +136,45 @@
 }
 
 .cancelBtn {
-  background: none;
-  border: 1.5px solid #7A003C;
-  color: #7A003C;
-  padding: 10px 25px;
-  border-radius: 20px;
-  font-weight: bold;
+  display: flex;
+  height: 2.75rem;
+  padding: 0.625rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 6.25rem;
+  border: 2px solid var(--DarkPurple);
+  color: var(--DarkPurple);
+  font-family: var(--secondarySource);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
   cursor: pointer;
 }
 
 .submitBtn {
-  background-color: #7A003C;
-  color: white;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 20px;
-  font-weight: bold;
   display: flex;
+  height: 2.75rem;
+  padding: 0.625rem 1.25rem;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
+  border-radius: 6.25rem;
+  background: var(--DarkPurple);
+  color: #F8F8F8;
+  font-family: var(--secondarySource);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  border: none;
   cursor: pointer;
 }
 
 .submitBtn img {
   width: 16px;
+  filter: brightness(0) invert(1);
 }
 
 

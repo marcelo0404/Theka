@@ -47,7 +47,7 @@ export function Contact() {
 
             <div className={styles.inputGroup}>
               <label>Mensagem</label>
-              <textarea placeholder="Escreva a sua mensagem."></textarea>
+              <input placeholder="Escreva a sua mensagem." />
             </div>
 
             <div className={styles.actionButtons}>
