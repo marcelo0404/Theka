@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { AuthProvider } from './contexts/AuthContext';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
@@ -41,8 +42,10 @@ function LayoutContainer() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <LayoutContainer />
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <LayoutContainer />
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
