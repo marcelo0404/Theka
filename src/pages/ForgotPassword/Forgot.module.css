@@ -159,3 +159,124 @@
   .leftSide { display: none; }
   .card { width: 100%; border-radius: 0; position: relative; }
 }
+
+
+@media (max-width: 480px) {
+  .pageContainer {
+    flex-direction: column; 
+    height: auto; 
+    min-height: 100vh;
+    width: 100%;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    background-color: #8C490D;
+  }
+
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    width: 100%;
+    height: 220px;
+    box-sizing: border-box;
+  }
+
+  .brand img {
+    width: 100px; 
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  .illustration {
+    width: 260px; 
+    margin-left: 0;
+    transform: rotate(0deg);
+    max-height: 110px;
+    object-fit: contain;
+  }
+
+  .rightSide {
+    width: 100%;
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .card {
+    position: static;
+    width: 100%;
+    height: auto; 
+    min-height: calc(100vh - 220px); 
+    border-radius: 30px 30px 0 0; 
+    padding: 30px 20px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .title {
+    font-size: 1.8rem; 
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .inputGroup {
+    margin-bottom: 1.2rem;
+  }
+
+  .inputGroup label {
+    font-size: 0.95rem;
+  }
+
+  .inputGroup input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  .buttonGroup {
+    flex-direction: column-reverse; 
+    width: 100%;
+    gap: 10px;
+    margin-top: 1.5rem;
+  }
+
+  .backBtn,
+  .sendBtn, 
+  .saveBtn {
+    width: 100%; 
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    padding: 12px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .successAlert {
+    top: 10px;
+    right: 10px;
+    left: 10px; 
+    max-width: calc(100% - 20px);
+    padding: 10px 15px;
+    border-radius: 12px;
+  }
+
+  .iconBox {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    margin-right: 12px;
+  }
+
+  .iconBox span {
+    font-size: 22px;
+  }
+
+  .message {
+    font-size: 0.9rem;
+  }
+}

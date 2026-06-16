@@ -56,10 +56,10 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       localStorage.setItem('authToken', response.access);
       localStorage.setItem('refreshToken', response.refresh);
 
-      // Para obter dados do user completo, você poderia fazer uma requisição adicional
-      // Por enquanto, vamos guardar apenas o email
+      // Para obter dados do user completo, poderia fazer uma requisição adicional
+      // Por enquanto, vai guardar apenas o email
       const userData: User = {
-        id: 0, // Você precisará atualizar depois
+        id: 0, // precisa atualizar depois
         email,
       };
       

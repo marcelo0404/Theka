@@ -255,3 +255,191 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 480px) {
+  * {
+    max-width: 100%;
+    box-sizing: border-box; 
+  }
+
+  .pageContainer {
+    width: 100%;
+    margin: 40px auto; 
+    padding: 0 15px;
+    overflow-x: hidden;
+  }
+
+  .novidades {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .novidadesText h1 {
+    font-size: 2.5rem; 
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .destaqueInfo h3 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin: 20px 0 10px 0;
+    text-align: center;
+  }
+
+  .destaqueInfo p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .carrosselNovidades {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .capaDestaque {
+    width: 10rem; 
+    height: 15rem;
+  }
+
+  .capaMini {
+    display: none; 
+  }
+
+  .catalogo h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .searchBar {
+    width: 100%; 
+    height: auto;
+    flex-direction: column; 
+    border-radius: 20px;
+    padding: 15px;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .searchInput {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+  .selectFilter {
+    width: 100%; 
+    height: 3rem;
+    margin-right: 0;
+    border-radius: 10px;
+  }
+
+  .searchBtn {
+    width: 100% !important;
+    height: 3rem;
+    border-radius: 10px;
+  }
+
+  .bookGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+    padding: 15px;
+    justify-items: center;
+  }
+
+  .bookGrid img {
+    width: 100%; 
+    max-width: 140px;
+    height: auto;
+    aspect-ratio: 2/3;
+  }
+
+  .plus {
+    display: none; 
+  }
+
+  .pagination {
+    width: 100%;
+    margin-left: 0; 
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .pageNum {
+    font-size: 1.5rem;
+  }
+
+  .activePage {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 30px 15px 10px 15px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .spacer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .brandColumn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-top: 10px;
+    align-items: center;
+    width: 12rem;
+    height: auto;
+  }
+
+  .column {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .column h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .column ul li {
+    justify-content: center;
+    font-size: 1rem !important;
+    margin-bottom: 12px;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    padding: 0 10px;
+    line-height: 1.4;
+  }
+}

@@ -10,7 +10,7 @@ import cover13 from '../../assets/CAPA-12.png';
 import cover14 from '../../assets/CAPA-13.png';
 import { getLivros, Livro } from '../../services/books-api';
 
-const API_BASE_URL = 'https://thekaapideploy2.pythonanywhere.com';
+const API_BASE_URL = 'https://thekaapi3.pythonanywhere.com/';
 
 function getLivroImagemSrc(livro: Livro): string {
   const anyLivro = livro as Record<string, any>;
@@ -53,7 +53,6 @@ export function Collection() {
         setError(null);
         const response = await getLivros(currentPage);
         setLivros(response.results);
-        // Calcular total de páginas (assumindo 15 itens por página baseado no layout)
         const pages = Math.ceil(response.count / 15);
         setTotalPages(pages);
       } catch (err) {
@@ -169,30 +168,13 @@ export function Collection() {
                       src={getLivroImagemSrc(livro)} 
                       alt={livro.titulo} 
 
-                      style={{
-                        width: '100%',
-                        height: 'auto',
-                        borderRadius: '4px'
-                      }}
+                      
                     />
-                    <h4 style={{
-                      marginTop: '8px',
-                      fontSize: '14px',
-                      textAlign: 'center',
-                      maxWidth: '100%',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      whiteSpace: 'nowrap'
-                    }}>
+                    <h4 >
                       {livro.titulo}
                     </h4>
                     {livro.autor && (
-                      <p style={{
-                        fontSize: '12px',
-                        color: '#666',
-                        margin: '4px 0',
-                        textAlign: 'center'
-                      }}>
+                      <p>
                         {livro.autor}
                       </p>
                     )}

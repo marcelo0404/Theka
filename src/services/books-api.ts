@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://thekaapideploy2.pythonanywhere.com';
+const API_BASE_URL = 'https://thekaapi3.pythonanywhere.com/';
 
 // ====== TIPOS ======
 export interface Livro {
