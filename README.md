@@ -91,9 +91,10 @@ Durante o desenvolvimento, o código foi estritamente alinhado com os critérios
 Desenvolvido por **Marcelo dos Santos Vieira** 🚀
 
 | Contato | 
-| 📧 **E-mail** | [marcelovieira@ejectufrn.com.br]
-| 💼 **LinkedIn** | [https://www.linkedin.com/in/marcelo-vieira-a1a1a82a8/]
-| 🐙 **GitHub** | [https://github.com/marcelo0404]
+
+| 📧 **E-mail** | [marcelovieira@ejectufrn.com.br](marcelovieira@ejectufrn.com.br)
+| 💼 **LinkedIn** | [marcelo-vieira](https://www.linkedin.com/in/marcelo-vieira-a1a1a82a8/)
+| 🐙 **GitHub** | [marcelo0404](https://github.com/marcelo0404)
 
 ---
 
